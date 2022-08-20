@@ -9,6 +9,14 @@ Java Web，是用Java技术来解决相关web互联网领域的技术栈。web�
 
 # 目录结构🐱‍🚀
 
+## jdbc
+jdbc接口
+- HelloJdbc.java 简单的JDBC演示
+- ConnectDatabase.java JDBC连接数据库的方式
+- ResultSetTest.java ResultSet示例
+
+
+
 # 谨记👨
 
 人的志向通常和他们的能力成正比例
