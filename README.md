@@ -14,6 +14,11 @@ jdbc接口
 - HelloJdbc.java 简单的JDBC演示
 - ConnectDatabase.java JDBC连接数据库的方式
 - ResultSetTest.java ResultSet示例
+- PreparedStatementTest.java sql预处理方案
+- JdbcUtils.java JdbcUtils开发
+- UseJdbcUtils.java 使用JdbcUtils工具类
+- JdbcAffairs.java JDBC事务演示
+- BatchProcessing.java JDBC批处理
 
 
 
