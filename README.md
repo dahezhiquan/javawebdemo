@@ -19,6 +19,11 @@ jdbc接口
 - UseJdbcUtils.java 使用JdbcUtils工具类
 - JdbcAffairs.java JDBC事务演示
 - BatchProcessing.java JDBC批处理
+- C3P0Test.java C3P0数据库连接池演示
+- DruidTest.java Druid连接池演示
+- DruidJdbcUtils.java DruidJDBC工具类
+- DruidJdbcUtilsTest.java DruidJdbcUtils测试
+
 
 
 
