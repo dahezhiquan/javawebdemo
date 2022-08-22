@@ -23,6 +23,22 @@ jdbc接口
 - DruidTest.java Druid连接池演示
 - DruidJdbcUtils.java DruidJDBC工具类
 - DruidJdbcUtilsTest.java DruidJdbcUtils测试
+- ApDBUtils.java Apache - DBUtils演示
+
+### domain
+表的对象映射
+- User.java User表的对象映射
+
+### dao
+DAO层
+- BasicDAO.java BasicDAO开发
+- UserDAO.java User类的DAO，根据业务需求的User类的特有的方法
+
+
+### test
+测试包
+- TestDAO.java DAO测试类
+
 
 
 
