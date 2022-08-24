@@ -47,7 +47,8 @@ DAO层
 - Position.java 正则定位符
 - Grouping.java 捕获分组
 - RegularExpressionExample.java 正则表达式实例
-
+- PatternTest.java Pattern类演示
+- Stuttering.java 结巴去重案例
 
 
 
