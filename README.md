@@ -50,6 +50,12 @@ DAO层
 - PatternTest.java Pattern类演示
 - Stuttering.java 结巴去重案例
 
+## java8
+java8新特性演示
+
+- HelloLambda.java Lambda表达式演示
+- FunctionalInterface.java java内置的函数式接口
+
 
 
 
