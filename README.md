@@ -57,6 +57,24 @@ java8新特性演示
 - FunctionalInterface.java java内置的函数式接口
 
 
+## servlets
+业务类包
+- AddServlet.java 获取参数演示：向User表中添加一组数据
+- ServletLifeCycle.java servlet的生命周期
+- SessionServlet.java Session会话技术演示
+- SessionAttribute.java Session保存作用域
+- ServerSideForwarding.java 服务端内部转发案例
+- ServerSideForwardingPurpose.java 服务端内部转发目的地址
+- ShowUserServlet.java 使用Thymeleaf渲染页面展示user列表
+- ViewBaseServlet.java 视图模板演示基类
+
+
+
+
+## web
+javaweb web文件夹
+- index.html 主页获取参数演示
+- showuser.html 使用Thymeleaf渲染页面展示user列表
 
 
 # 谨记👨

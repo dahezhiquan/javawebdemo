@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>servlets.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletLifeCycle</servlet-name>
+        <servlet-class>servlets.ServletLifeCycle</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLifeCycle</servlet-name>
+        <url-pattern>/servletlife</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>servlets.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/getsession</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionAttribute</servlet-name>
+        <servlet-class>servlets.SessionAttribute</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionAttribute</servlet-name>
+        <url-pattern>/setatt</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetSessionAttribute</servlet-name>
+        <servlet-class>servlets.GetSessionAttribute</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetSessionAttribute</servlet-name>
+        <url-pattern>/getatt</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServerSideForwarding</servlet-name>
+        <servlet-class>servlets.ServerSideForwarding</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServerSideForwarding</servlet-name>
+        <url-pattern>/ssf</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServerSideForwardingPurpose</servlet-name>
+        <servlet-class>servlets.ServerSideForwardingPurpose</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServerSideForwardingPurpose</servlet-name>
+        <url-pattern>/ssfp</url-pattern>
+    </servlet-mapping>
+
+    <!-- 在上下文参数中配置视图前缀和视图后缀 -->
+    <context-param>
+        <param-name>view-prefix</param-name>
+        <param-value>/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>view-suffix</param-name>
+        <param-value>.html</param-value>
+    </context-param>
+</web-app>

@@ -16,7 +16,7 @@ public class DruidJdbcUtilsTest {
             connection = DruidJdbcUtils.getConnection();
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, "北疆大学");
-            preparedStatement.setInt(2, 50);
+            preparedStatement.setInt(2, 1);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);

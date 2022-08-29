@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+</head>
+<style>
+    table {
+        width: 80%;
+        border-color: white;
+    }
+
+    table tr {
+        line-height: 30px;
+        border-color: white;
+    }
+
+    table tr:FIRST-CHILD {
+        background: #f2f2f2;
+    }
+
+    table tr:nth-child(even) {
+        background: #d5eeeb;
+    }
+</style>
+<body>
+
+<table>
+    <tbody>
+    <tr align="center">
+        <td>用户名</td>
+        <td>学校</td>
+    </tr>
+    <tr align="center" th:if="${#lists.isEmpty(session.userList)}">
+        <td>没有啦</td>
+        <td> 没有啦</td>
+    </tr>
+
+    <tr align="center" th:unless="${#lists.isEmpty(session.userList)}" th:each="user : ${session.userList}">
+        <td th:text="${user.username}"></td>
+        <td th:text="${user.school}"> </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

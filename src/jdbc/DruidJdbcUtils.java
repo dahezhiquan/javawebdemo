@@ -19,7 +19,7 @@ public class DruidJdbcUtils {
     static {
         try {
             Properties properties = new Properties();
-            properties.load(new FileInputStream("src\\druid.properties"));
+            properties.load(new FileInputStream("D:\\系统资源\\系统默认\\桌面\\javawebdemo\\src\\druid.properties"));
             ds = DruidDataSourceFactory.createDataSource(properties);
         } catch (Exception e) {
             throw new RuntimeException(e);

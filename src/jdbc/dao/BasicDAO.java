@@ -28,6 +28,7 @@ public class BasicDAO<T> {
         try {
             connection = DruidJdbcUtils.getConnection();
             int update = qr.update(connection, sql, parameters);
+            System.out.println("更新条数：" + update);
             return update;
         } catch (SQLException e) {
             throw new RuntimeException(e);

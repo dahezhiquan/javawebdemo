@@ -28,4 +28,15 @@ public class TestDAO {
         int update = userDAO.update("delete from user where id = ?", 66);
         System.out.println(update);
     }
+
+    /**
+     * 测试UserDao的添加单条数据
+     */
+    @Test
+    public void testUserDaoAddUser() {
+        // 添加数据到数据库
+        UserDAO userDAO = new UserDAO();
+        userDAO.addUser(2, "username", "password", "school");
+    }
+
 }
