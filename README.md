@@ -67,6 +67,19 @@ java8新特性演示
 - ServerSideForwardingPurpose.java 服务端内部转发目的地址
 - ShowUserServlet.java 使用Thymeleaf渲染页面展示user列表
 - ViewBaseServlet.java 视图模板演示基类
+- RequestSave.java request保存作用域演示，保存
+- RequestGet.java request保存作用域演示，获取
+- ApplicationSave.java Application保存作用域演示，保存
+- ApplicationGet.java Application保存作用域演示，获取
+- EditServlet.java 编辑user表中的数据
+- UpdateServlet.java 更新user表中的数据
+- DelServlet.java 删除user表中的数据
+- AddUserServlet.java 向user表中添加数据
+
+
+
+### scope
+保存作用域演示
 
 
 
@@ -75,6 +88,12 @@ java8新特性演示
 javaweb web文件夹
 - index.html 主页获取参数演示
 - showuser.html 使用Thymeleaf渲染页面展示user列表
+- edit.html 编辑用户页面
+- add.html 用户添加页面
+
+
+
+
 
 
 # 谨记👨
